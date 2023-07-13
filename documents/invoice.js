@@ -1,26 +1,26 @@
-import moment from 'moment'
+import moment from "moment";
 
-export default function (
-   { name,
-      address,
-      phone,
-      email,
-      dueDate,
-      date,
-      id,
-      notes,
-      subTotal,
-      type,
-      vat,
-      total,
-      items,
-      status,
-      totalAmountReceived,
-      balanceDue,
-      company,
-   }) {
-    const today = new Date();
-return `<!DOCTYPE html>
+export default function ({
+  name,
+  address,
+  phone,
+  email,
+  dueDate,
+  date,
+  id,
+  notes,
+  subTotal,
+  type,
+  vat,
+  total,
+  items,
+  status,
+  totalAmountReceived,
+  balanceDue,
+  company,
+}) {
+  const today = new Date();
+  return `<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -128,8 +128,8 @@ img {
 
       <div>
           <p class="title">Bill to:</p>
-          <h4>Panshak Solomon</h4>
-          <p>ipanshak@gmail.com</p>
+          <h4>Vivek Shah</h4>
+          <p>venv.dev@gmail.com</p>
           <p>+234 803 057 3601</p>
           <p>A.P. Leventis Ornithological Research</p>
           <p>Institute, Jos</p>
@@ -198,6 +198,5 @@ img {
 </div>
 </body>
 </html>
-`
-;
-};
+`;
+}
